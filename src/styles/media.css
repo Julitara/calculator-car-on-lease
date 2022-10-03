@@ -1,0 +1,153 @@
+@media (max-width: 1367px) {
+
+    .container {
+        max-width: 958px;
+        padding: 104px 15px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 0px;
+    }
+
+    .title {
+        margin-bottom: 41px;
+    }
+
+    .form__group {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .form__input_top {
+        width: 100%;
+    }
+
+    .form__input_range[type=range] {
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .form-calc-price {
+        max-width: 100%;
+        margin-bottom: 36px;
+    }
+
+    .form__label-bottom {
+        margin-top: 8px;
+    }
+
+    .form-calc-left {
+        margin-right: 53px;
+    }
+
+    .form__btn {
+        max-width: 345px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .container {
+        max-width: 726px;
+        padding: 68px 15px;
+    }
+
+    .form-calc-right {
+        max-width: 49%;
+    }
+
+    .form-calc-left {
+        max-width: 49%;
+        margin-right: 22px;
+    }
+
+}
+
+@media (max-width: 555px) {
+    .container {
+        max-width: 310px;
+        padding: 47px 15px;
+    }
+
+    .title {
+        font-size: 34px;
+        max-width: 212px;
+        margin-bottom: 31px;
+    }
+
+    .form__label {
+        font-size: 14px;
+        line-height: 136%;
+        margin-bottom: 7px;
+    }
+
+    .form__input_top {
+        height: 59px;
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .form__svg_rub {
+        top: 23px;
+        right: 19px;
+        width: 15px;
+        height: 20px;
+    }
+
+    .form__input_range[type=range] {
+        margin-bottom: 25px;
+    }
+
+    /*@media (max-width: 555px)*/
+
+    .form-calc-price {
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+
+    .form__label-bottom {
+        margin-top: 0px;
+        margin-bottom: -7px;
+    }
+
+    .form-calc-left {
+        max-width: 100%;
+        margin-bottom: 17px;
+    }
+
+    .form-calc-right {
+        max-width: 100%;
+        margin-bottom: 7px;
+    }
+    /*@media (max-width: 555px)*/
+    .form__input_bottom {
+        height: 41px;
+        font-size: 22px;
+        line-height: 20px;
+    }
+
+    .form__btn {
+        max-width: 280px;
+        font-size: 22px;
+        line-height: 20px;
+        height: 60px;
+    }
+
+    .form__input_percent {
+        top: 3px;
+    }
+
+    .svg-precent {
+        top: 22px;
+        right: -9px;
+    }
+
+    .svg-deadline {
+        top: 13px;
+        right: 20px;
+        width: 46px;
+    }
+}

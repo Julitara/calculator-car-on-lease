@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Calculator</title>
+    <meta name="description" content="Сайт расчета стоимости автомобиля в лизинг"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="bandle.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Рассчитайте стоимость автомобиля в лизинг</h1>
+        <form class="form" id="form">
+            <div class="form__group">
+                <label class="form__label" for="price-auto"> Стоимость автомобиля</label>
+                <div class="form__input__svg_rub">
+                    <input class="form__input_top" name="price-auto" id="price-auto">
+                    <svg class="form__svg_rub" width="21" height="21" view-box="0 0 21 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.6774 12.84C20.1074 12.84 20.1074 0.899999 11.6774 0.899999H2.79742V8.64H0.487422V12.84H2.79742V14.13H0.487422V18.33H2.79742V21H7.74742V18.33H14.9174V14.13H7.74742V12.84H11.6774ZM11.2274 5.7C13.3574 5.7 13.3274 8.64 11.2274 8.64H7.74742V5.7H11.2274Z"
+                            fill="#575757" />
+                    </svg>
+                </div>
+                <input id="price-auto-range" class="form__input_range" type="range" min="1000000" max="6000000"
+                    >
+            </div>
+            <div class="form__group">
+                <label class="form__label " for="initial-fee"> Первоначальный взнос</label>
+                <div class="form__input__svg_percent">
+                    <input class="form__input_top input-init-rub" id="initial-fee-rub" name="initial-fee-rub" readonly>
+                    <input class="form__input_percent" type="number" name="initial-fee" id="initial-fee">
+                    <svg class="svg-precent" width="39" height="17" viewBox="22 0 39 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.43567 1.26H0.615672V4.78H3.80567V16H7.43567V1.26ZM9.1307 10.17C9.1307 13.866 11.7047 16.33 15.1587 16.33C18.5907 16.33 21.3407 13.932 21.3407 10.17V7.046C21.3407 3.306 18.6347 0.929999 15.2247 0.929999C11.7707 0.929999 9.1307 3.328 9.1307 7.09V10.17ZM12.7607 7.09C12.7607 5.396 13.7947 4.516 15.2247 4.516C16.6547 4.516 17.7107 5.44 17.7107 7.046V10.17C17.7107 11.842 16.5887 12.7 15.1587 12.7C13.7727 12.7 12.7607 11.864 12.7607 10.17V7.09ZM26.2739 8.256C28.3199 8.256 29.9039 6.65 29.9039 4.582C29.9039 2.58 28.3199 0.929999 26.2739 0.929999C24.1839 0.929999 22.5999 2.58 22.5999 4.582C22.5999 6.65 24.1839 8.256 26.2739 8.256ZM24.0299 16H26.6259L36.9659 1.26H34.3699L24.0299 16ZM26.2739 5.99C25.5039 5.99 24.8879 5.374 24.8879 4.582C24.8879 3.834 25.5039 3.196 26.2739 3.196C27.0439 3.196 27.6819 3.834 27.6819 4.582C27.6819 5.374 27.0439 5.99 26.2739 5.99ZM34.7659 16.33C36.8119 16.33 38.3959 14.724 38.3959 12.656C38.3959 10.654 36.8119 9.004 34.7659 9.004C32.6759 9.004 31.0919 10.654 31.0919 12.656C31.0919 14.724 32.6759 16.33 34.7659 16.33ZM34.7659 14.064C33.9959 14.064 33.3799 13.448 33.3799 12.656C33.3799 11.908 33.9959 11.27 34.7659 11.27C35.5359 11.27 36.1739 11.908 36.1739 12.656C36.1739 13.448 35.5359 14.064 34.7659 14.064Z"
+                            fill="#333E48" />
+                    </svg>
+                </div>
+
+                <input id="initial-fee-range" class="form__input_range" type="range" min="10" max="60">
+            </div>
+            <div class="form__group">
+                <label class="form__label" for="deadline"> Срок лизинга</label>
+                <div class="form__input__svg_deadline">
+                    <input class="form__input_top deadline" type="number" name="deadline" id="deadline">
+                    <svg class="svg-deadline" width="45" height="13" viewBox="0 0 45 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.228 1H10.014L8.10002 6.764L6.18602 1H0.862016V12H4.27202V4.894L6.71402 12H9.37602L11.818 4.938V12H15.228V1ZM22.0808 0.669999C18.6928 0.669999 16.3168 3.2 16.3168 6.5C16.3168 9.58 18.2528 12.33 22.0148 12.33C24.6328 12.33 26.8988 10.988 27.6028 8.48H24.0608C23.7088 9.03 22.8068 9.382 21.9708 9.316C20.6948 9.206 19.9688 8.458 19.7488 7.622H27.6688C28.1088 3.618 25.7548 0.669999 22.0808 0.669999ZM22.0588 3.662C23.1368 3.662 23.9948 4.168 24.3028 5.092H19.7928C20.1008 4.212 20.9588 3.662 22.0588 3.662ZM39.786 5.268C39.368 2.584 37.278 0.669999 34.198 0.669999C30.612 0.669999 28.434 3.222 28.434 6.5C28.434 9.778 30.612 12.33 34.198 12.33C37.256 12.33 39.346 10.416 39.786 7.754H36.2C35.914 8.502 35.166 9.03 34.22 9.03C32.724 9.03 31.844 7.886 31.844 6.522C31.844 5.136 32.724 3.97 34.22 3.97C35.166 3.97 35.914 4.498 36.2 5.268H39.786ZM41.154 8.37V12H44.674V8.37H41.154Z" fill="#333E48"/>
+                        </svg>                        
+                </div>
+                <input id="deadline-range" class="form__input_range" type="range" min="1" max="60">
+            </div>
+            <div class="form-calc-price">
+                <div class="form-calc-left">
+                    <label class="form__label form__label-bottom" for="total-price"> Сумма договора лизинга</label>
+                    <input class="form__input_bottom" id="total-price" name="total-price" readonly>
+                </div>
+                <div class="form-calc-right">
+                    <label class="form__label form__label-bottom" for="payment"> Ежемесячный платеж от</label>
+                    <input class="form__input_bottom" id="payment" name="payment" readonly>
+                </div>
+            </div>
+            <button id="form-btn" class="form__btn" type="submit">Оставить заявку</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
