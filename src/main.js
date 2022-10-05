@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const formBtn = document.getElementById('form-btn');
     formBtn.disabled = true;
 
-    let response = await fetch('https://eoj3r7f3r4ef6v4.m.pipedream.net', {
+    let response = await fetch('https://hookb.in/eK160jgYJ6UlaRPldJ1P', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
